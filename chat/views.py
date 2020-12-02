@@ -7,3 +7,6 @@ bp_main = Blueprint('main', __name__, url_prefix='/')
 def home():
     text = 'textext'
     return render_template('home.html', text=text)
+
+# TODO analiza dokumentacji do websocetów
+
