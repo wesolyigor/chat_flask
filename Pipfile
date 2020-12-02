@@ -12,6 +12,7 @@ flask-sqlalchemy = "*"
 flask-migrate = "*"
 flask-socketio = "*"
 eventlet = "*"
+flask-wtf = "*"
 
 [requires]
 python_version = "3.9"
