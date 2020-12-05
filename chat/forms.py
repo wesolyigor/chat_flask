@@ -7,6 +7,6 @@ from wtforms.validators import DataRequired
 
 
 class UserForm(FlaskForm):
-    name = StringField(label='Write name of your task', validators=[DataRequired()])
-    room = StringField(label='Room:', validators=[DataRequired()])
-    submit = SubmitField(label='LOGIN.', validators=[DataRequired()])
+    name = StringField(label='Your name:', validators=[DataRequired()])
+    room = StringField(label='Room name:', validators=[DataRequired()])
+    submit = SubmitField(label='LOGIN', validators=[DataRequired()])

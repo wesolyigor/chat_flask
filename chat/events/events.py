@@ -28,11 +28,11 @@ def handle_message(message):
 def joined(message):
     room = session.get('room')
     join_room(room)
-    emit('status', {'msg': f'{session.get("name")} has entered the room.'}, room=room)
+    emit('status', {'msg': f'{session.get("name")} dołączył do pokoju.'}, room=room)
 
 
 @socketio.on('left', namespace='/chat')
 def left(message):
     room = session.get('room')
     leave_room(room)
-    emit('status', {'msg': f'{session.get("name")} has left the room.'}, room=room)
+    emit('status', {'msg': f'{session.get("name")} opuścił pokój.'}, room=room)
